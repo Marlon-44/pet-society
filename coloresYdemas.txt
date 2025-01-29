@@ -1,0 +1,10 @@
+azul: #4BCFF9
+amarillo: #F6E344
+semiblanco: #fff8f5
+rosa: #ffc3c3
+naranja: #ff540c;
+cafecito: #302f2b
+
+fonts:
+silk display
+montserrat alternates
