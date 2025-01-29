@@ -12,7 +12,7 @@ const Services = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 10px;
+    padding: 50px 20px;
     @media screen and (min-width: 600px){
         padding: 50px;
     }
