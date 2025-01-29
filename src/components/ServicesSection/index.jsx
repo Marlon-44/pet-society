@@ -12,20 +12,30 @@ const Services = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px ;
+    padding: 50px 10px;
+    @media screen and (min-width: 600px){
+        padding: 50px;
+    }
 `
 
 const CardSection = styled.section`
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
     width: 100%;
-    justify-content: center;
-`
+    overflow-x: scroll;
+    @media screen and (min-width: 600px){
+        overflow-x: hidden;
+        justify-content: center;
+    }`
+
 const DescriptionContainer = styled.div`
-    width: 50%;
-    text-align: center`
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: 600px){
+        width: 50%;
+    }`
+
 const ServicesSection = ()=>{
     return(
         <Services>

@@ -29,7 +29,12 @@ const IconLabel = styled.label`
     }
     
 `
+const Logo = styled.img`
+    width: 40px;
 
+    @media screen and (min-width: 600px){
+    width: 60px;}
+`
 const LogoSection = styled.div`
     display: flex;
     gap: 10px;
@@ -79,7 +84,7 @@ const Header = ()=>{
         <HeaderContainer>
             <Nav>
                 <LogoSection>
-                    <img src="./assets/logo.svg" alt="" />
+                    <Logo src="./assets/logo.svg" alt="" />
                     <IconLabel>PetSociety</IconLabel>
                 </LogoSection>
                 <BurgerMenu src="assets/menu.svg" alt=""/>

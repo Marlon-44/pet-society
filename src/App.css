@@ -5,7 +5,8 @@
 }
 body{
   background-color: #fff8f5 ;
-  overflow-x: hidden
+  width: 100vw;
+  overflow-x: hidden;
 }
 html, body, *{
   margin: 0;
@@ -27,3 +28,4 @@ html, body, *{
   background-color: #ff540c;
   border-radius: 10px;
 }
+

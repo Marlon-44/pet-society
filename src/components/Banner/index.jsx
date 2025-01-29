@@ -10,6 +10,7 @@ const BannerSection = styled.section`
     justify-content: center;
     box-sizing: border-box;
     margin-top: 30px;
+    overflow-x: hidden;
     `
 
 const FootPrintDecoration__left = styled.img`

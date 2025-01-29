@@ -2,7 +2,7 @@ import styled from "styled-components";
 import DescriptionParagraph from "../DescriptionParagraph";
 
 const Card = styled.div`
-    width: 300px;
+    min-width: 200px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -15,21 +15,35 @@ const Card = styled.div`
     border-bottom-left-radius: 150px; 
     border-bottom-right-radius: 150px;
     text-align: center;
+    @media screen and (min-width: 600px){
+        width: 300px
+    }
 `;
 const CardImage = styled.div`
     background-size: cover;
     background-position: center;
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height:100px;
+    @media screen and (min-width: 600px){
+        width: 150px;
+        height: 150px;
+    }
 `
 const CardTitle = styled.h3`
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #ff540c;
     font-weight: 800;
+
+    @media screen and (min-width: 600px){
+        font-size: 1.3rem;
+    }
 `
 const DescriptionContainer = styled.div`
     width: 80%;
+    @media screen and (min-width: 600px){
+        widht: 100%
+    }
 `
 
 const ServiceCard = ({img, title, description}) => {
