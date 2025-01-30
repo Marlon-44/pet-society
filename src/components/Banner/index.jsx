@@ -93,6 +93,7 @@ const ImageContainer = styled.div`
     justify-content: center;
     width: 100%;
     gap: 50px;
+    flex: 1 1 0;
 `
 const Dog1 = styled.img`
     position: relative;
@@ -101,8 +102,9 @@ const Dog1 = styled.img`
     top: -100px;
     z-index: -1;
     display: none;
-    @media screen and (min-width: 600px){
-        width: 500px;
+    
+    @media screen and (min-width: 1024px){
+        max-width: 400px;
         display: flex;
     }`
 const Dog2 = styled.img`
@@ -112,7 +114,7 @@ const Dog2 = styled.img`
     top: -50px;
     z-index: -1;
     display: none;
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 1024px){
         display: flex;
     }
 `
@@ -123,9 +125,13 @@ const Dog3 = styled.img`
     top: -30px;
     z-index: -1;
     @media screen and (min-width: 600px){
-        width: 500px;
+        max-width: 400px;
+    }
+    @media screen and (min-width: 1024px){
+        max-width: 400px;
         top: -100px;
-}`
+    }
+`
 
 const Banner = ()=>{
     return(

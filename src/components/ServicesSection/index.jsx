@@ -14,7 +14,7 @@ const Services = styled.section`
     align-items: center;
     padding: 50px 20px;
     @media screen and (min-width: 600px){
-        padding: 50px;
+        padding: 50px 10px;
     }
 `
 
@@ -24,10 +24,13 @@ const CardSection = styled.section`
     margin-top: 30px;
     width: 100%;
     overflow-x: scroll;
-    @media screen and (min-width: 600px){
+    
+    @media screen and (min-width: 1024px){
         overflow-x: hidden;
         justify-content: center;
-    }`
+    }
+        
+    `
 
 const DescriptionContainer = styled.div`
     width: 100%;
