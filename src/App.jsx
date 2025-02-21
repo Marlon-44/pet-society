@@ -23,12 +23,14 @@ function App() {
       <InfoSection image={nutritionImage}
         title={nutritionTitle}
         description={nutritionDescription}
-        items={nutritionItems}/>
+        items={nutritionItems}
+        orientation='left'/>
 
       <InfoSection image={serveImage}
         title={serveTitle}
         description={serveDescription}
-        items={serveItems}/>
+        items={serveItems}
+        orientation='right'/>
       <Advice/>
       <JourneySection/>
       <Footer/>

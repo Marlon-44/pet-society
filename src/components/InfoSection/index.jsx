@@ -38,24 +38,45 @@ const InfoImage = styled.img`
 `
 
 
-const InfoSection = ({image, title, description, items}) =>{
+const InfoSection = ({image, title, description, items, orientation}) =>{
+    if(orientation === 'left'){
+        return(
+                <InformationContainer>
+                    
+                    <ImageSection>
+                        <InfoImage src={image}/>
+                    </ImageSection>
+                    <InformationBox>
+                        <Title text={title}/>
+                        <DescriptionParagraph text={description}/>
+                        {
+                            items.map((item) => (
+                                <InformationItem key={item.id} info={item.itemText} />
+                            ))
+                        }
+                    </InformationBox>
+                </InformationContainer>
+            )
+    }else{
+        return(
+            <InformationContainer>
+                <InformationBox>
+                    <Title text={title}/>
+                    <DescriptionParagraph text={description}/>
+                    {
+                        items.map((item) => (
+                            <InformationItem key={item.id} info={item.itemText} />
+                        ))
+                    }
+                </InformationBox>
+                <ImageSection>
+                    <InfoImage src={image}/>
+                </ImageSection>
+                
+            </InformationContainer>
+        )
+    }
     
-    return(
-        <InformationContainer>
-            <ImageSection>
-                <InfoImage src={image}/>
-            </ImageSection>
-            <InformationBox>
-                <Title text={title}/>
-                <DescriptionParagraph text={description}/>
-                {
-                    items.map((item) => (
-                        <InformationItem key={item.id} info={item.itemText} />
-                    ))
-                }
-            </InformationBox>
-        </InformationContainer>
-    )
 }
 
 export default InfoSection;
