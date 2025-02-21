@@ -5,6 +5,7 @@ const SectionName = styled.h2`
     font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
+    margin: 0;
     @media screen and (min-width: 600px){
         font-size: 5rem;
     }

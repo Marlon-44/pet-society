@@ -8,10 +8,13 @@ import Footer from './components/Footer'
 import InfoSection from './components/InfoSection'
 import { useContext } from 'react'
 import { NutritionContext } from './Context/NutritionContext'
+import { ServeContext } from './Context/ServeContext'
+import JourneySection from './components/JourneySection'
+import Advice from './components/Advice'
 
 function App() {
   const {nutritionImage, nutritionTitle, nutritionDescription, nutritionItems} = useContext(NutritionContext);
-  
+  const {serveItems, serveTitle, serveDescription, serveImage} = useContext(ServeContext);
   return (
     <>
       <Header/>
@@ -21,6 +24,13 @@ function App() {
         title={nutritionTitle}
         description={nutritionDescription}
         items={nutritionItems}/>
+
+      <InfoSection image={serveImage}
+        title={serveTitle}
+        description={serveDescription}
+        items={serveItems}/>
+      <Advice/>
+      <JourneySection/>
       <Footer/>
     </>
   )

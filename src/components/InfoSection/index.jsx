@@ -39,7 +39,7 @@ const InfoImage = styled.img`
 
 
 const InfoSection = ({image, title, description, items}) =>{
-    console.log('items', items)
+    
     return(
         <InformationContainer>
             <ImageSection>
