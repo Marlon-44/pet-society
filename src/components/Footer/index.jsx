@@ -122,7 +122,6 @@ const Footer = () => {
             
             
 
-            <PawPrintFooter src="assets/huella.png" alt="" />
         </FooterContainer>
     )
 }

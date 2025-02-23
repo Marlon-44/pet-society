@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import Title from "../Title";
-import { NutritionContext } from "../../Context/NutritionContext";
-import { useContext } from "react";
 import DescriptionParagraph from "../DescriptionParagraph";
 import InformationItem from "../InformationItem";
 
@@ -12,7 +10,7 @@ const InformationContainer = styled.section`
     padding: 50px;
     align-items: center;
     justify-content: center;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1024px) {
         flex-direction: row;
     }
 `
@@ -29,12 +27,19 @@ const InformationBox = styled.div`
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1024px) {
         width:40%;
     }
 `
 const InfoImage = styled.img`
     width: 80%;
+    margin-bottom: 30px;
+    @media screen and (min-width: 600px) {
+        width: 150%;
+    }
+    @media screen and (min-width: 600px) {
+        width: 80%;
+    }
 `
 
 

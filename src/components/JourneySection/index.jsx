@@ -10,31 +10,53 @@ const JourneyContainer = styled.section`
     flex-direction: column;
     margin-top: 50px;
     padding: 50px;
+    justify-content: center;
+    align-items: center;
 `
 const JourneyContent = styled.div`
     width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 30px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    
     width: 100%;
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `
 const LeftContent = styled.div`
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
     gap: 20px;
+    margin-top: 50px;
+    @media screen and (min-width: 1024px) {
+        margin-top: 0;
+        width: 25%;
+    }
 `
 
 
 const RightContent = styled.div`
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
     gap: 20px;
+    @media screen and (min-width: 1024px) {
+        
+        width: 25%;
+    }
 `
 const Image = styled.img`
-    width: 50%;
+
+    display: none;
+    @media screen and (min-width: 1024px) {
+        
+        display: flex;
+    }
 `
 const JourneySection = ()=>{
     const {journeyItemsL, journeyItemsR} = useContext(JourneyContext);

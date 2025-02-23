@@ -15,30 +15,31 @@ const BannerSection = styled.section`
 
 const FootPrintDecoration__left = styled.img`
     position: absolute;
-    width: 250px;
-    left:-150px;
-    top: -30px;
+    width: 150px;
+    left:-50px;
+    top: 50px;
     rotate: 120deg;
     z-index: -1;
 
     @media screen and (min-width: 600px){
-        width: 500px;
-        left:-270px;
-        top: -50px;
+        width: 200px;
+        left:-100px;
+        top: 50px;
     }
+    
 `
 const FootPrintDecoration__right = styled.img`
     position: absolute;
-    width: 250px;
+    width: 150px;
     rotate: -70deg;
-    right: -150px;
+    right: -60px;
     top: 300px;
     z-index: -1;
 
     @media screen and (min-width: 600px){
-        width: 500px;
-        right: -300px;
-        top: 50px;
+        width: 150px;
+        right: -10px;
+        top: 300px;
     }
 `
 const InfoContainer = styled.div`
@@ -137,7 +138,6 @@ const Banner = ()=>{
     return(
         <BannerSection>
             <FootPrintDecoration__left src="assets/huella.png" alt="" />
-            <FootPrintDecoration__right src="assets/huella.png" alt="" />
             <InfoContainer>
                 <TitleContainer>
                     <BannerTitle><DogIcon src="assets/cat.svg" alt="" />Professional Stress</BannerTitle> 
