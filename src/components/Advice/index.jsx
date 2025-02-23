@@ -27,6 +27,7 @@ const ImagesContainer = styled.div`
     gap: 50px;
     width: 100%;
     justify-content: center;
+    align-items: center;
     @media screen and (min-width: 600px){
         
         width: 65%;
@@ -100,7 +101,7 @@ const Advice = () => {
             <ImagesContainer>
                 <ImdAd src="/assets/dog1.png"></ImdAd>
                 <ImdAd1 src="/assets/dog3.png"></ImdAd1>
-                <ImdAd src="/assets/dog3.png"></ImdAd>
+                <ImdAd src="/assets/dog2Info.png"></ImdAd>
             </ImagesContainer>
             <InfoContainer>
                 <AdiviceTitle >Your Pet Will Be</AdiviceTitle>
